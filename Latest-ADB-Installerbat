@@ -104,7 +104,7 @@ powershell -executionpolicy bypass -Command "(gc usb_driver\android_winusb.inf |
 
 :: Fetching unsigned driver installer tool
 echo Downloading unsigned driver installer tool
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/windows-unsigned-driver-installer@master/unsigned_driver_installerbat', 'usb_driver\unsigned_driver_installer.bat')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/Latest-ADB-Fastboot-Installer-for-Windows@master/files/unsigned_driver_installerbat', 'usb_driver\unsigned_driver_installer.bat')"
 
 :: Source: https://stackoverflow.com/questions/1103994/how-to-run-multiple-bat-files-within-a-bat-file
 :: https://stackoverflow.com/questions/3583565/how-to-skip-pause-in-batch-file
