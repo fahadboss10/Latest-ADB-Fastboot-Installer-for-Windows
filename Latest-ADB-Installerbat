@@ -7,6 +7,7 @@ echo While He Himself is Uncreated
 echo ====================================================
 echo Latest ADB Fastboot and USB Driver Installer tool
 echo By fawazahmed0 @ xda-developers
+echo Improved by fahadboss10 @ github
 echo ====================================================
 :: echo. is newline
 echo.
@@ -59,18 +60,18 @@ PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).Download
 
 echo Downloading latest usb drivers
 PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://dl.google.com/android/repository/latest_usb_driver_windows.zip', 'google_usb_driver.zip')"
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fawazahmed0/Latest-adb-fastboot-installer-for-windows@master/files/google64inf', 'google64inf')"
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fawazahmed0/Latest-adb-fastboot-installer-for-windows@master/files/google86inf', 'google86inf')"
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fawazahmed0/Latest-adb-fastboot-installer-for-windows@master/files/Stringsvals', 'Stringsvals')"
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fawazahmed0/Latest-adb-fastboot-installer-for-windows@master/files/kmdf', 'kmdf')"
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fawazahmed0/Latest-adb-fastboot-installer-for-windows@master/files/Latest ADB Launcherbat', 'Latest ADB Launcher.bat')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/Latest-adb-fastboot-installer-for-windows@master/files/google64inf', 'google64inf')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/Latest-adb-fastboot-installer-for-windows@master/files/google86inf', 'google86inf')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/Latest-adb-fastboot-installer-for-windows@master/files/Stringsvals', 'Stringsvals')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/Latest-adb-fastboot-installer-for-windows@master/files/kmdf', 'kmdf')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/Latest-adb-fastboot-installer-for-windows@master/files/Latest ADB Launcherbat', 'Latest ADB Launcher.bat')"
 
 ::Fetching devcon.exe and powershell script
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fawazahmed0/Latest-adb-fastboot-installer-for-windows@master/files/fetch_hwidps1', 'fetch_hwid.ps1')"
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fawazahmed0/Latest-adb-fastboot-installer-for-windows@master/files/devconexe', 'devcon.exe')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/Latest-adb-fastboot-installer-for-windows@master/files/fetch_hwidps1', 'fetch_hwid.ps1')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/Latest-adb-fastboot-installer-for-windows@master/files/devconexe', 'devcon.exe')"
 
 :: Source: https://pureinfotech.com/list-environment-variables-windows-10/
-:: Using Environment varaibles for programe files
+:: Using Environment variables for program files
 :: Uninstalling/removing the platform tools older version, if they exists and  killing instances of adb if they are running
 echo Uninstalling older version
 adb kill-server > nul 2>&1
@@ -103,7 +104,7 @@ powershell -executionpolicy bypass -Command "(gc usb_driver\android_winusb.inf |
 
 :: Fetching unsigned driver installer tool
 echo Downloading unsigned driver installer tool
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fawazahmed0/windows-unsigned-driver-installer@master/unsigned_driver_installerbat', 'usb_driver\unsigned_driver_installer.bat')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/fahadboss10/windows-unsigned-driver-installer@master/unsigned_driver_installerbat', 'usb_driver\unsigned_driver_installer.bat')"
 
 :: Source: https://stackoverflow.com/questions/1103994/how-to-run-multiple-bat-files-within-a-bat-file
 :: https://stackoverflow.com/questions/3583565/how-to-skip-pause-in-batch-file
@@ -143,7 +144,7 @@ if NOT "%rbtval%" == "0" set rbtval=%errorLevel%
 
 if "%rbtval%" == "0" (
 echo.
-echo Installing fastboot drivers, Now the device will reboot to fastboot mode
+echo Installing fastboot drivers. Now the device will reboot to fastboot mode
 
 :: Adding timout , waiting for fastboot mode to boot
 :: Source: http://blog.bitcollectors.com/adam/2015/06/waiting-in-a-batch-file/
@@ -210,6 +211,15 @@ PowerShell -executionpolicy bypass -Command "Start-Sleep -s 10" > nul 2>&1
 echo.
 echo Note: In Case fastboot mode is not getting detected, just connect your phone
 echo in fastboot mode and run the installer tool again.
+
+echo "Installation Version details:"
+echo.
+adb --version
+echo.
+fastboot --version
+echo.
+echo "If you would like to verify that this is the latest version, you can check https://developer.android.com/tools/releases/platform-tools"
+
 PowerShell -executionpolicy bypass -Command "Start-Sleep -s 4" > nul 2>&1
 echo.
 echo press any key to exit

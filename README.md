@@ -3,10 +3,10 @@
 <p align="center"> <i>ADB Fastboot and USB driver installer tool for windows (Always installs the latest version)</i></p>
 
 <p align="center">
-  <img src="https://github.com/fawazahmed0/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Tool-Animation1.gif">
+  <img src="https://github.com/fahadboss10/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Tool-Animation1.gif">
 </p>
 
-[![](https://data.jsdelivr.com/v1/package/gh/fawazahmed0/Latest-adb-fastboot-installer-for-windows/badge)](https://www.jsdelivr.com/package/gh/fawazahmed0/Latest-adb-fastboot-installer-for-windows)
+[![](https://data.jsdelivr.com/v1/package/gh/fahadboss10/Latest-adb-fastboot-installer-for-windows/badge)](https://www.jsdelivr.com/package/gh/fahadboss10/Latest-adb-fastboot-installer-for-windows)
 
 ------------
 
@@ -24,7 +24,7 @@ Windows 7 and above
 
 ------------
 ### Download Link:
-[Click Here](https://github.com/fawazahmed0/Latest-adb-fastboot-installer-for-windows/releases/latest/download/Latest-ADB-Installer.bat "click here")
+[Click Here](https://github.com/fahadboss10/Latest-adb-fastboot-installer-for-windows/releases/latest/download/Latest-ADB-Installer.bat "click here")
 
 ### XDA Thread:
 [Click Here](https://forum.xda-developers.com/android/general/tool-adb-fastboot-installer-tool-windows-t3999445 "Click Here")
@@ -40,15 +40,15 @@ Windows 7 and above
 1. Google Chrome may give false warning while downloading the file, click on keep to download the file.
 <br />
 
-![Chrome Warning 1](https://github.com/fawazahmed0/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Chrome%20warning%2001.jpg)
-![Chrome Warning 2](https://github.com/fawazahmed0/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Chrome%20warning%202.jpg)
+![Chrome Warning 1](https://github.com/fahadboss10/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Chrome%20warning%2001.jpg)
+![Chrome Warning 2](https://github.com/fahadboss10/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Chrome%20warning%202.jpg)
 <br />
 
 3. In Window 10, you will see Blue color box, during installation, click on More Info and click Run/Run anyway to start Installation.
 <br />
 
-![Win 10 Screenshot 1](https://github.com/fawazahmed0/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Windows%2010%20Screenshot1.png)
-![Win 10 Screenshot 2](https://github.com/fawazahmed0/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Windows%2010%20Screenshot2.png)
+![Win 10 Screenshot 1](https://github.com/fahadboss10/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Windows%2010%20Screenshot1.png)
+![Win 10 Screenshot 2](https://github.com/fahadboss10/Latest-adb-fastboot-installer-for-windows/raw/master/Screenshots/Windows%2010%20Screenshot2.png)
 
 
 ------------
